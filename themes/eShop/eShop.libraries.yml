@@ -1,0 +1,12 @@
+home:
+  css:
+    layout:
+      assets/css/core-style.css: {}
+      assets/style.css: {}
+      assets/css/responsive.css: {}
+  js:
+    assets/js/jquery/jquery-2.2.4.min.js: {}
+    assets/js/popper.min.js: {}
+    assets/js/bootstrap.min.js: {}
+    assets/js/plugins.js: {}
+    assets/js/active.js: {}

@@ -1,0 +1,11 @@
+<ul id="banners_grid" class="clearfix">
+{% for item in bannerHome %}
+   <li>
+      <a href="javascrip:;" class="img_container">
+         <img src="{{ item.image }}" data-src="{{ item.image }}" alt="" class="lazy">
+         <div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+         </div>
+      </a>
+   </li>
+{% endfor %}
+</ul>

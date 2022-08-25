@@ -1,0 +1,38 @@
+<div class="container margin_60_35">
+   <div class="main_title">
+      <h2>Product</h2>
+      <p>Sản phẩm mới</p>
+   </div>
+   <div class="row small-gutters">
+      {% for product in products %}
+      <div class="col-6 col-md-4 col-xl-3">
+         <div class="grid_item">
+            <span class="ribbon new">New</span>
+            <figure>
+               <a href="/product/{{ product.id }}">
+                  <img class="img-fluid lazy" src="{{ product.image }}" data-src="{{ product.image }}" alt="">
+                  <img class="img-fluid lazy" src="{{ product.image }}" data-src="{{ product.image }}" alt="">
+               </a>
+            </figure>
+            <a href="/product/{{ product.id }}">
+               <h3>{{ product.name }}</h3>
+            </a>
+            <div class="price_box">
+               <span class="new_price">${{ product.price }}</span>
+               <span class="percentage">{{ product.point }} Point</span>
+            </div>
+            <ul>
+               <li><a href="javascript:;" class="tooltip-1 add-cart" data-toggle="tooltip" data-placement="left"
+                     title="Add to cart"><i class="ti-shopping-cart"></i>
+                     <span>Add to cart</span>
+                     <span data-product-id="" style="display:none">{{ product.id }}</span>
+                     <span data-product-quantity="" style="display:none">1</span>
+                  </a></li>
+            </ul>
+         </div>
+         <!-- /grid_item -->
+      </div>
+      {% endfor %}
+   </div>
+   <!-- /row -->
+</div>

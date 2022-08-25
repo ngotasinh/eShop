@@ -1,0 +1,14 @@
+name: EShop Theme
+type: theme
+description: 'Theme EShop'
+base theme: false
+core_version_requirement: ^9
+libraries:
+  - eShop/home
+regions:
+  header: Header
+  discount: Discount
+  slider: Slider
+  banners: Banners
+  content: Content
+  footer: Footer
